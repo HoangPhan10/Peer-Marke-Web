@@ -1,0 +1,1 @@
+export {PortalShip as default} from '@app/modules/portal/ship'

@@ -1,0 +1,22 @@
+.channel-sell-reset-password{
+    margin-top: 150px;
+    width: 100%;
+    .body{
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.14);
+        height: 270px;
+        width: 500px !important;
+        background-color: white;
+        &-title{
+            .icon{
+                font-size:25px;
+                color: #ee4d2d;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        input{
+            height: 41px;
+        }
+    }   
+}

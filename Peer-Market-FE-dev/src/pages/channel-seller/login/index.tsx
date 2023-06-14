@@ -1,0 +1,1 @@
+export {LoginChannelSell as default} from '@app/modules/channel-seller/Login/index'

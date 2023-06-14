@@ -1,0 +1,1 @@
+export {AccountAddress as default} from '@app/modules/account/address'

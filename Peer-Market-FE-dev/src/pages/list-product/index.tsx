@@ -1,0 +1,1 @@
+export {ListProduct as default} from '@app/modules/list-product';

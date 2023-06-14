@@ -1,0 +1,1 @@
+export {ListProductAdmin as default} from '@app/modules/admin/list-product/list'

@@ -1,0 +1,62 @@
+.cms-main {
+  height: 100vh;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  width: calc(100% - 256px);
+  // overflow-y: scroll;
+  overflow-x: hidden;
+  padding-top: 72px;
+  &.collapsed {
+    width: calc(100% - 80px);
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 256px);
+  z-index: 29;
+  transition: width .2s;
+  padding: 0;
+  box-shadow: 4px 4px 40px 0 rgb(0 0 0 / 5%);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 72px;
+  z-index: 9;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  &.collapsed {
+    width: calc(100% - 80px);
+  }
+
+  .btn-collapsed {
+    width: 72px;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    border: none;
+  }
+}
+
+.content {
+  padding: 24px;
+  min-height: calc(100% - 72px);
+}
+
+.ant-menu {
+  &::before {
+    display: none;
+    content: "";
+  }
+}
+
+@import './channel-sell/index';
+@import './channel-sell/register/index';
+@import './channel-sell/reset-password/index';

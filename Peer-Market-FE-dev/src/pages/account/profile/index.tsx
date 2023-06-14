@@ -1,0 +1,1 @@
+export {AccountProfile as default} from '@app/modules/account/profile'

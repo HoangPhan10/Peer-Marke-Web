@@ -1,0 +1,72 @@
+.channel-seller-onboarding {
+  width: 800px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  width: 1264px;
+  margin: 50px auto;
+  padding: 40px 0px 20px 0px;
+  &-step {
+    padding: 0 40px 30px 40px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .ant-form-item-label > label{
+    width: 150px;
+    text-align: right;
+  }
+  input {
+        height: 35px;
+        padding: 0 10px;
+      }
+  .ant-steps-item-title::after {
+    background-color: #ee4d2d !important;
+    height: 1px;
+  }
+  .ant-steps-item-finish .ant-steps-item-icon {
+    background-color: #ee4d2d;
+    border: none;
+    .ant-steps-icon {
+      color: white;
+      top: -5px;
+      font-weight: 700;
+    }
+  }
+}
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon{
+  background-color: #55cc77;
+  border-color: #55cc77;
+}
+.ant-switch-checked{
+  background-color: #55cc77;
+}
+.shop-transport{
+  &-title{
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 18px;
+    &-msg{
+      font-size: 14px;
+      color: #999;
+    }
+  }
+  &-content{
+    border: 1px solid #e5e5e5;
+    padding: 17px 20px 0px 20px;
+    &-warning{
+      color: #ee4d2d;
+      padding-left: 10px;
+    }
+  }
+  &-footer{
+    border-top: 1px solid #e5e5e5;
+    margin-top: 30px;
+    padding : 20px 50px 0 50px;
+  }
+}
+
+.start-shop{
+  width: 450px;
+  &-msg{
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+  }
+}

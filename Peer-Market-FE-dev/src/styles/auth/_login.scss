@@ -1,0 +1,46 @@
+.auth-page {
+	.bg-primary {
+		background-color: #20d489!important;
+		padding: 30px 60px;
+	}
+	
+	.title {
+		font-weight: 600;
+		font-size: 48px;
+		text-align: center;
+	}
+
+	.sub-title {
+		font-size: 36px;
+		font-weight: 600;
+		color: white;
+		text-align: center;
+
+	}
+	
+	.bg-img {
+		background-image: url('/assets/images/winner.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 500px;
+	}
+
+	.auth-form {
+		max-width: 500px;
+		margin: 0px auto;
+		padding-top: 20%;
+
+		h1 {
+			font-size: 48px;
+		}
+
+		.btn-login {
+			background-color: #20d489!important;
+			color: #fff;
+			font-weight: 600;
+			font-size: 1.075rem!important;
+			height: 50px;
+			border-radius: 10px;
+		}
+	}
+}

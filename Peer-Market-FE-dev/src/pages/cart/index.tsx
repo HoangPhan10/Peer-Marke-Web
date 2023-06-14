@@ -1,0 +1,1 @@
+export {Cart as default} from '@app/modules/cart'

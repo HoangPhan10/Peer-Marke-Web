@@ -1,0 +1,42 @@
+version: "3.8"
+  #Khai bao container
+services:
+  mysql-springboot-container:
+    image: mysql:8.0.32
+    container_name: mysql-springboot-container
+    ports:
+      - 3310:3306
+    volumes:
+      - mysql-springboot-data:/var/lib/mysql
+      - mysql-springboot-config-deamond:/etc/mysql/conf.d
+    environment:
+      MYSQL_USER: phanhoang
+      MYSQL_PASSWORD: 10022002
+      MYSQL_ROOT_PASSWORD: 10022002
+      MYSQL_DATABASE: peer-market
+    networks:
+      - backend
+  app-springboot-container:
+    image: phanhoang102/springboot-docker:v1.0.0
+    container_name: app-springboot-container
+    ports:
+      - 8080:8083
+    networks:
+      - backend
+    volumes:
+      - ./Peer-Market-staging:/app
+  next-app-container:
+    image: phanhoang102/docker-nextjs-dev:v1.0.0
+    container_name: peer-market-fe-container
+    ports:
+      - 3000:3000
+    networks:
+      - backend
+networks:
+  backend:
+    name: springboot-app-network
+volumes:
+  mysql-springboot-data:
+  mysql-springboot-config-deamond:
+
+

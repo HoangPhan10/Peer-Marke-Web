@@ -1,0 +1,1 @@
+export {AccountPurchase as default} from '@app/modules/account/purchase'

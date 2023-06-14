@@ -1,0 +1,1 @@
+export {ListUsersAdmin as default} from '@app/modules/admin/list-user'

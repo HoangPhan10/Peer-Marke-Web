@@ -1,0 +1,1 @@
+export {ListOrderShop as default} from '@app/modules/portal/order'

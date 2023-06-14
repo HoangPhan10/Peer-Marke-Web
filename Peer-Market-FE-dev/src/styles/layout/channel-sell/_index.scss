@@ -1,0 +1,58 @@
+.channel-sell {
+  &-header {
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    h4 {
+      margin-left: 20px;
+    }
+  }
+  &-body {
+    &-left {
+      margin-top: 130px;
+      h2 {
+        font-size: 32px;
+        color: #ee4d2d;
+      }
+      p {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        color: #666;
+        margin-bottom: 32px;
+      }
+    }
+    &-right {
+      margin-top: 100px;
+      background-color: #fff;
+      box-sizing: border-box;
+      padding: 30px;
+      width: 400px;
+      height: 400px;
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.14);
+      border-radius: 4px;
+      overflow: hidden;
+      &-msg {
+        color: rgba(0, 0, 0, 0.26);
+        font-size: 0.875rem;
+        span {
+          color: #ee4d2d;
+          cursor: pointer;
+        }
+      }
+      &-title {
+        font-size: 20px;
+      }
+      input {
+        height: 41px;
+        padding: 0 10px;
+      }
+      .ant-input-affix-wrapper {
+        padding: 0 10px;
+      }
+      .reset-password {
+        font-size: 13px;
+        color: #0055aa;
+        cursor: pointer;
+      }
+    }
+  }
+}

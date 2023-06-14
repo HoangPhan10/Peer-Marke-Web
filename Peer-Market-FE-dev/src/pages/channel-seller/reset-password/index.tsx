@@ -1,0 +1,1 @@
+export {ResetPassword as default} from '@app/modules/channel-seller/reset-password'

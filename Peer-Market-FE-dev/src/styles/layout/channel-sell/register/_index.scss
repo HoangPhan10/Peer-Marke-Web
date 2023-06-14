@@ -1,0 +1,28 @@
+.channel-sell-body-register {
+  background-image: url("/assets/images/channel-seller/banner.png");
+  width: 100%;
+  height: 700px;
+  .channel-sell-body-right {
+    margin-top: 50px;
+    height: 500px;
+  }
+  .channel-sell-body-left {
+    p {
+      color: #ee4d2d;
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+    .icon {
+      font-size: 30px;
+      color: #ee4d2d;
+      margin: 10px 10px 0 0;
+    }
+    h2 {
+      font-size: 36px;
+    }
+    h4 {
+      font-size: 24px;
+      color: #ee4d2d;
+    }
+  }
+}

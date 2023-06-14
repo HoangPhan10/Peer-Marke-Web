@@ -1,0 +1,231 @@
+.font-bold {
+  font-weight: bold;
+}
+.ph-h-40 {
+  height: 40px;
+}
+
+.ph-w-330{
+  width: 330px !important;
+}
+.ph-w-130{
+  width: 130px !important;
+}
+.ph-relative{
+  position: relative;
+}
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  padding-top: 5px;
+  height: 40px;
+}
+.end {
+  text-align: right;
+}
+.flex {
+  display: flex;
+}
+.font-print {
+  font-family: "Times New Roman", Times, serif;
+}
+.boxCenter {
+  margin: 0 auto;
+  border: 1px solid #444;
+}
+.textTransform {
+  text-transform: none;
+}
+.middle {
+  text-align: center;
+}
+.pointer {
+  cursor: pointer;
+}
+.position-fixed {
+  position: fixed;
+}
+.align-center {
+  align-items: center;
+}
+.text-left {
+  text-align: left;
+}
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.display {
+  display: block;
+}
+.display-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.none-display {
+  display: none;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+.upper {
+  text-transform: uppercase;
+}
+.text-bold {
+  font-weight: bolder;
+}
+.nounderline {
+  text-decoration: none;
+  color: white;
+}
+
+.w-20-percent {
+  width: 20%;
+}
+
+.wdth-50PerCent {
+  width: 50% !important;
+}
+.account {
+  height: 80%;
+}
+.w-85-for-weather{
+  width: 85%;
+}
+$spacewidth : (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100);
+
+@each $space in $spacewidth {.width-percent-#{$space} {width: #{$space}#{"%"} !important;}
+}
+$spacesizes: (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100
+);
+@each $space in $spacesizes {.fontsz-#{$space} {font-size: #{$space}px !important;}
+}
+$spaceamounts: (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,110,120,134,150,470,820,848,125
+);
+$sides: (top, bottom, left, right);
+.marginSelect {margin-left: -600px;
+}
+@each $space in $spaceamounts {@each $side in $sides {.m-#{$space} {margin: #{$space}px !important;}.mto-#{$space} {margin: #{$space}px auto !important;}.m#{str-slice($side, 0, 1)}-#{$space} {margin-#{$side}: #{$space}px !important;}.mlr-#{$space} {margin: 0px #{$space}px !important;}.mtb-#{$space} {margin: #{$space}px 0px !important;}.p-#{$space} {padding: #{$space}px !important;}.p#{str-slice($side, 0, 1)}-#{$space} {padding-#{$side}: #{$space}px !important;}.plr-#{$space} {padding: 0px #{$space}px !important;}.ptb-#{$space} {padding: #{$space}px 0px !important;}}
+}
+
+$spacedflex: (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100
+);
+$width : (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,140,150,200,190,282,340,450);
+
+@each $space in $width {.ph-w-#{$space} {width: #{$space}#{"px"} !important;}
+}
+$height : (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,150,190,282);
+
+@each $space in $height {.ph-h-#{$space} {height: #{$space}#{"px"} !important;}
+}
+// $dimentions: (width, height);
+// @each $space in $spacedflex {
+//   @each $dimention in $dimentions {
+//     .#{str-slice($dimention, 0, 1)}-#{$space} {
+//       height: #{$space * 5}px !important;
+//     }
+//     .d#{str-slice($dimention, 0, 1)}-#{$space} {
+//       height: #{$space}#{"%"} !important;
+//     }
+//     .df-#{str-slice($dimention, 0, 1)}-#{$space} {
+//       height: #{$space}vh !important;
+//     }
+//     .min-#{str-slice($dimention, 0, 1)}-#{$space} {
+//       min-height: #{$space * 5}px !important;
+//     }
+//   }
+// }
+
+.filter-input{
+  height: 40px;
+  width: 250px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.tuan-close {
+  width: calc(100vw - 105px);
+  margin-left: 85px;
+  margin-top: 100px;
+  @media (min-width: 1330px) and (max-width: 1900px) {
+    margin-top: 80px;
+  }
+}
+
+.tuan-open {
+  width: calc(100vw - 280px);
+  margin-left: 260px;
+  margin-top: 100px;
+}
+
+.modal-dialog {
+  margin-top: 100px;
+}
+
+.modalConfirmContainer {
+  margin-top: 100px;
+  @media (min-width: 1330px) and (max-width: 1900px) {
+    margin-top: 80px;
+  }
+}
+
+.colorCalendar{
+  cursor: pointer;
+  color:white !important;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.poiter-cursor {
+  cursor: pointer;
+}
+@mixin printCV{
+  @media (max-width: 854px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 1330px) and (max-width: 1900px) {
+    @content;
+  }
+}
+@mixin desktopHD {
+  @media (min-width: 1901px) {
+    @content;
+  }
+}
+@mixin absolute {
+  content: "";
+  z-index: 10;
+  position: absolute;
+  display: block;
+  width: 15px;
+  border-top-left-radius: 70%;
+  border-top-right-radius: 70%;
+  height: 15px;
+  top: 0px;
+  background-color: #624b2e;
+  @media (max-width: 1300px) {
+   height: 17px;
+  }
+}
+
+.border-intern{
+  border-right: 1px solid ;
+  margin-top: 15px;
+  padding-top: 20px;
+  
+  border: 1px solid rgb(224, 224, 224);
+  background-color: rgb(244, 244, 244);
+  border-radius: 10px;
+  /* border-radius: 15px; */
+  // box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;    
+  box-shadow: 
+    -8px -8px 12px 0 rgba(0, 0, 0, 0.3),
+    12px 12px 16px rgba(255, 255, 255, 0.25);
+}
+
+.color-white{
+  color: white !important;
+}

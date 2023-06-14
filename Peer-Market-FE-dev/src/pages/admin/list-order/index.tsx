@@ -1,0 +1,1 @@
+export {ListOrderAdmin as default} from '@app/modules/admin/list-order'
