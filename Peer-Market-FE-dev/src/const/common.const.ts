@@ -1,4 +1,4 @@
-export const API_END_POINT = "http://app-springboot-container:8083/api/v1/";
+export const API_END_POINT = "http://localhost:8080/api/v1/";
 export const DEVICE_TOKEN =
   "fiQulEdARaamD0m0q2QX9B:APA91bF7RzRCshcAKkD40adnMJwBk5S5yTagUjaZvKKABMeIaWuurBm7-esAkm-vgdT9Ryd_OWmtAiOLkfvZGfmKB6f8J3fESpzCnZujhI-V-2A2MAHtJz-AywbAx3K8WxwjzYcgWAW7";
 export const JWT_ACCESS_TOKEN = "JWT_ACCESS_TOKEN";

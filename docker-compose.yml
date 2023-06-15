@@ -26,7 +26,7 @@ services:
     volumes:
       - ./Peer-Market-staging:/app
   next-app-container:
-    image: phanhoang102/docker-nextjs-dev:v1.0.0
+    image: phanhoang102/docker-nextjs-dev:v1.0.1
     container_name: peer-market-fe-container
     ports:
       - 3000:3000

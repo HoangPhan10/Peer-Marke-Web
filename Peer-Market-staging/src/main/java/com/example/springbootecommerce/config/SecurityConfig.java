@@ -18,7 +18,10 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 @Configuration
 @EnableWebSecurity
@@ -99,12 +102,16 @@ public class SecurityConfig {
 
     @Bean
     UrlBasedCorsConfigurationSource configuration(){
-        CorsConfiguration configuration = new CorsConfiguration() ;
-        configuration.setAllowedOrigins(Arrays.asList("*"));
-        configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE"));
-        configuration.setAllowedHeaders(Arrays.asList("authorization", "content-type", "x-auth-token"));
+        String allowPattern = "http://app-springboot-container:8083";
+        CorsConfiguration configuration = new CorsConfiguration();
+        configuration.setAllowedMethods(Collections.singletonList("POST,GET,DELETE,PUT"));
+        configuration.setAllowedHeaders(Collections.singletonList("Special-Request-Header"));
+        configuration.setAllowedOriginPatterns(Arrays.asList(allowPattern.split(",")));
+        configuration.setAllowCredentials(true);
+        configuration.applyPermitDefaultValues();
+
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**",configuration);
+        source.registerCorsConfiguration("/**", configuration);
         return source;
     }
 
