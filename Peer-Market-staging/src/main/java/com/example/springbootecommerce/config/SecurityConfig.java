@@ -72,6 +72,8 @@ public class SecurityConfig {
                                 .requestMatchers("/transports").permitAll()
                                 .requestMatchers("/detail/*").permitAll()
                                 .requestMatchers("/detail").permitAll()
+                                .requestMatchers("/status/*").permitAll()
+                                .requestMatchers("/status").permitAll()
                                 .requestMatchers("/transport/*").permitAll()
                                 .requestMatchers("/transport").permitAll()
                                 .requestMatchers("/carts/*").permitAll()

@@ -17,6 +17,7 @@ public class TransportImplementService implements TransportService {
     public Transport save(TransportRequest transportRequest) {
         Transport transport = new Transport();
         transport.setName(transportRequest.getName());
+        transport.setPrice(transportRequest.getPrice());
         return transportRepository.save(transport);
     }
 
