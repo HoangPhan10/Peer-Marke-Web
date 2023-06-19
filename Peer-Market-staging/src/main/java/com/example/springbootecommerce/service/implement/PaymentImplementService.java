@@ -2,6 +2,7 @@ package com.example.springbootecommerce.service.implement;
 
 import com.example.springbootecommerce.config.VnpayConfig;
 import com.example.springbootecommerce.pojo.entity.Payment;
+import com.example.springbootecommerce.pojo.requests.PaymentRequest;
 import com.example.springbootecommerce.pojo.requests.VnpayRequest;
 import com.example.springbootecommerce.pojo.responses.PaymentResponse;
 import com.example.springbootecommerce.repository.PaymentRepository;
@@ -99,6 +100,14 @@ public class PaymentImplementService implements PaymentService {
     public List<Payment> getListPayments() {
         return paymentRepository.findAll();
     }
+
+    @Override
+    public Payment createPayment(PaymentRequest paymentRequest) {
+        Payment payment = new Payment();
+        payment.setName_payment(paymentRequest.getName_payment());
+        return paymentRepository.save(payment);
+    }
+
     @Override
     public RedirectView paymentSuccess(String vnp_ResponseCode,List<Long> listId) throws URISyntaxException {
         RedirectView redirectView = new RedirectView("http://localhost:3000/account/purchase");

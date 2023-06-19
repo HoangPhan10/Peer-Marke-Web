@@ -3,6 +3,7 @@ package com.example.springbootecommerce.controller;
 
 import com.example.springbootecommerce.config.VnpayConfig;
 import com.example.springbootecommerce.pojo.entity.Payment;
+import com.example.springbootecommerce.pojo.requests.PaymentRequest;
 import com.example.springbootecommerce.pojo.requests.VnpayRequest;
 import com.example.springbootecommerce.pojo.responses.ObjectResponse;
 import com.example.springbootecommerce.pojo.responses.PaymentResponse;
@@ -33,6 +34,13 @@ public class VnpayController {
         PaymentResponse paymentResponse = paymentService.createVnpay(vnpayRequest);
         return ResponseEntity.status(HttpStatus.OK).body(
                 new ObjectResponse(HttpStatus.OK, "Create payment vnpay successfully",paymentResponse)
+        );
+    }
+    @PostMapping("/create")
+    public ResponseEntity<ObjectResponse> createPayment(@RequestBody PaymentRequest paymentRequest){
+        Payment payment = paymentService.createPayment(paymentRequest);
+        return ResponseEntity.status(HttpStatus.OK).body(
+                new ObjectResponse(HttpStatus.OK, "Create payment successfully",payment)
         );
     }
     @GetMapping("")
